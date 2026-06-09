@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Fiestas Logroño",
+    "slug": "fiestas-logrono",
+    "version": "1.0.0",
+    "scheme": "fiestas-logrono",
+    "platforms": ["ios", "android", "web"],
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "bundleIdentifier": "com.sachonidas.fiestaslogrono",
+      "config": {
+        "googleMapsApiKey": "TU_API_KEY_GOOGLE_MAPS"
+      }
+    },
+    "android": {
+      "package": "com.sachonidas.fiestaslogrono",
+      "config": {
+        "googleMaps": {
+          "apiKey": "TU_API_KEY_GOOGLE_MAPS"
+        }
+      }
+    },
+    "plugins": [
+      "expo-router",
+      ["react-native-maps", { "googleMapsApiKey": "TU_API_KEY_GOOGLE_MAPS" }]
+    ]
+  }
+}
