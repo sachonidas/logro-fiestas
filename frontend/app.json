@@ -8,7 +8,12 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "Fiestas Logroño",
+      "shortName": "Fiestas LGR",
+      "description": "Guía de las fiestas de Logroño",
+      "themeColor": "#8B0000",
+      "backgroundColor": "#1A0A0A"
     },
     "ios": {
       "bundleIdentifier": "com.sachonidas.fiestaslogrono",
