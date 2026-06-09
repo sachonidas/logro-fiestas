@@ -5,5 +5,5 @@ export const apiKeyAuth: MiddlewareHandler = async (c, next) => {
   if (!key || key !== process.env.API_KEY) {
     return c.json({ error: 'Unauthorized' }, 401)
   }
-  await next()
+  return await next()
 }

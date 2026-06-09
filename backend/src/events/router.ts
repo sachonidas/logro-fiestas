@@ -41,7 +41,7 @@ const LoadBodySchema = z.object({
 // POST /api/events/load  (requires x-api-key)
 app.post('/load', apiKeyAuth, zValidator('json', LoadBodySchema), async (c) => {
   const { events } = c.req.valid('json')
-  const count = await insertEvents(events as EventInput[])
+  const count = await insertEvents(events)
   return c.json({ inserted: count })
 })
 
