@@ -13,6 +13,7 @@ export function CategoryFilter({ selected, onChange }: Props) {
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
+      style={styles.scrollView}
       contentContainerStyle={styles.container}
     >
       {CATEGORIES.map((cat) => {
@@ -47,6 +48,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     gap: 8,
     flexDirection: 'row',
+    alignItems: 'center',
   },
   chip: {
     flexDirection: 'row',
@@ -59,6 +61,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255,255,255,0.3)',
     backgroundColor: 'rgba(255,255,255,0.1)',
   },
+  scrollView: { flexGrow: 0 },
   emoji: { fontSize: 14 },
   label: { fontSize: 13, color: Colors.textMuted, fontWeight: '500' },
   labelSelected: { color: Colors.textDark, fontWeight: '700' },
