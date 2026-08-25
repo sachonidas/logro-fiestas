@@ -20,15 +20,38 @@ jobs:
         defaults:
             run:
                 working-directory: backend
+
+        # queries.test.ts es un test de integración: inserta y borra de verdad.
+        # La misma versión que corre en el VPS.
+        services:
+            postgres:
+                image: postgres:17-alpine
+                env:
+                    POSTGRES_DB: fiestas
+                    POSTGRES_USER: fiestas
+                    POSTGRES_PASSWORD: fiestas
+                ports:
+                    - 5432:5432
+                options: >-
+                    --health-cmd "pg_isready -U fiestas -d fiestas"
+                    --health-interval 5s
+                    --health-timeout 5s
+                    --health-retries 10
+
+        env:
+            DATABASE_URL: postgres://fiestas:fiestas@localhost:5432/fiestas
+
         steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
+            - uses: actions/checkout@v5
+            - uses: actions/setup-node@v5
               with:
                   node-version: '22'
                   cache: npm
                   cache-dependency-path: backend/package-lock.json
             - run: npm ci
             - run: npx tsc --noEmit
+            - name: Apply schema
+              run: psql -v ON_ERROR_STOP=1 "$DATABASE_URL" -f migrations/001_create_events.sql
             - run: npm test
 
     deploy:
