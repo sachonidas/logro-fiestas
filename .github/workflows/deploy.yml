@@ -58,18 +58,21 @@ jobs:
         needs: test
         runs-on: ubuntu-latest
         steps:
-            # Hasta que el VPS esté configurado (docs/deploy.md §5) los secrets no
-            # existen; en ese caso el job termina en verde sin desplegar.
+            # Faltando un secret no se puede desplegar, así que el job para en
+            # rojo. Saltárselo en verde escondería que el VPS sigue con la
+            # versión anterior.
             - name: Check deploy configuration
-              id: cfg
               run: |
-                  if [ -z "${{ secrets.DEPLOY_HOST }}" ]; then
-                      echo "skip=true" >> "$GITHUB_OUTPUT"
-                      echo "::notice::DEPLOY_HOST no está configurado; se omite el despliegue."
+                  missing=
+                  [ -n "${{ secrets.DEPLOY_HOST }}" ] || missing="$missing DEPLOY_HOST"
+                  [ -n "${{ secrets.DEPLOY_USER }}" ] || missing="$missing DEPLOY_USER"
+                  [ -n "${{ secrets.DEPLOY_SSH_KEY }}" ] || missing="$missing DEPLOY_SSH_KEY"
+                  if [ -n "$missing" ]; then
+                      echo "::error::Faltan secrets del despliegue:$missing (ver docs/deploy.md §6)"
+                      exit 1
                   fi
 
             - name: Deploy over SSH
-              if: steps.cfg.outputs.skip != 'true'
               uses: appleboy/ssh-action@v1
               with:
                   host: ${{ secrets.DEPLOY_HOST }}
