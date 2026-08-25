@@ -1,0 +1,46 @@
+# Despliegue en el VPS. El TLS y el dominio los pone la Caddy del proyecto
+# vecino (cooking-athletes), que es quien ocupa los puertos 80/443: llega al
+# backend por la red externa `web`. Ver docs/deploy.md.
+services:
+    backend:
+        build:
+            context: ./backend
+        image: logro-fiestas-backend
+        # Nombre fijo: es el host al que apunta el reverse_proxy de la Caddy vecina.
+        container_name: logro-fiestas-backend
+        restart: unless-stopped
+        environment:
+            NODE_ENV: production
+            PORT: 3000
+            DATABASE_URL: 'postgres://fiestas:${POSTGRES_PASSWORD}@database:5432/fiestas'
+            API_KEY: ${API_KEY}
+        # Sin `ports`: solo se alcanza desde dentro de Docker.
+        networks:
+            - default
+            - web
+        depends_on:
+            database:
+                condition: service_healthy
+
+    database:
+        image: postgres:17-alpine
+        restart: unless-stopped
+        environment:
+            POSTGRES_DB: fiestas
+            POSTGRES_USER: fiestas
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        volumes:
+            - database_data:/var/lib/postgresql/data
+        healthcheck:
+            test: ['CMD-SHELL', 'pg_isready -U fiestas -d fiestas']
+            interval: 5s
+            timeout: 5s
+            retries: 10
+
+volumes:
+    database_data:
+
+networks:
+    # Creada a mano una vez en el VPS: docker network create web
+    web:
+        external: true

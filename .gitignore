@@ -1,1 +1,4 @@
 .superpowers/
+
+# Secretos de producción (plantilla en deploy/.env.prod.example)
+.env.prod
