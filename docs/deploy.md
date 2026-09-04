@@ -103,9 +103,9 @@ insertar; es idempotente):
 
 ```bash
 API_URL=https://api.fiestaslogrono.es API_KEY=<el de .env.prod> \
-  ./data/load.sh san-bernabe-2026
+  ./data/load.sh san-mateo-2026
 
-curl 'https://api.fiestaslogrono.es/api/events?festival=san-bernabe-2026' | head -c 300
+curl 'https://api.fiestaslogrono.es/api/events?festival=san-mateo-2026' | head -c 300
 ```
 
 ## 5. Apuntar el frontend
@@ -115,7 +115,7 @@ En Vercel → Settings → Environment Variables del proyecto del frontend:
 | Variable | Valor |
 |---|---|
 | `EXPO_PUBLIC_API_URL` | `https://api.fiestaslogrono.es` |
-| `EXPO_PUBLIC_FESTIVAL` | `san-bernabe-2026` |
+| `EXPO_PUBLIC_FESTIVAL` | `san-mateo-2026` |
 
 `EXPO_PUBLIC_*` se **congela en el build**: cambiar la variable no basta, hay
 que redeployar en Vercel para que la nueva URL entre en el bundle.
@@ -174,9 +174,9 @@ gunzip -c /var/backups/logro-fiestas/fiestas_2026-08-24_0445.sql.gz \
 $C restart backend
 ```
 
-El contenido real de esta base son 15 eventos que también están versionados en
-`data/san-bernabe-2026.json`: si un backup fallase, `data/load.sh` reconstruye
-el estado. El backup cubre lo que se cargue en el futuro por API.
+El contenido real de esta base son los eventos versionados en
+`data/san-mateo-2026.json` y `data/san-bernabe-2026.json`: si un backup fallase,
+`data/load.sh <festival>` reconstruye el estado. El backup cubre lo que se cargue en el futuro por API.
 
 ## Notas
 

@@ -1,32 +1,442 @@
 {
-  "Plaza del Mercado": { "lat": 42.46584, "lng": -2.44472 },
-  "Plaza de la Oca": { "lat": 42.46602, "lng": -2.44492 },
-  "Plaza Santiago": { "lat": 42.46636, "lng": -2.44413 },
-  "Plaza Diversidad": { "lat": 42.46560, "lng": -2.44580 },
-  "Parking del Revellín": { "lat": 42.46484, "lng": -2.44690 },
-  "Murallas del Revellín": { "lat": 42.46476, "lng": -2.44676 },
-  "Arco de San Bernabé": { "lat": 42.46512, "lng": -2.44700 },
-  "Plaza San Bartolomé": { "lat": 42.46708, "lng": -2.44398 },
-  "Parque del Ebro": { "lat": 42.46100, "lng": -2.44100 },
-  "Concha del Espolón": { "lat": 42.46512, "lng": -2.44313 },
-  "Paseo del Espolón": { "lat": 42.46520, "lng": -2.44300 },
-  "Plaza del Ayuntamiento": { "lat": 42.46654, "lng": -2.44426 },
-  "Teatro Bretón": { "lat": 42.46450, "lng": -2.44280 },
-  "Concatedral de la Redonda": { "lat": 42.46578, "lng": -2.44440 },
-  "Parque de la Cometa": { "lat": 42.46900, "lng": -2.44800 },
-  "Parque Gallarza": { "lat": 42.46800, "lng": -2.44600 },
-  "Plaza Martínez Flamarique": { "lat": 42.46590, "lng": -2.44350 },
-  "Plaza de Abastos": { "lat": 42.46700, "lng": -2.44500 },
-  "Iglesia de Santiago el Real": { "lat": 42.46640, "lng": -2.44400 },
-  "Fundación Ibercaja": { "lat": 42.46550, "lng": -2.44480 },
-  "Auditorium del Ayuntamiento": { "lat": 42.46654, "lng": -2.44426 },
-  "Plazuela Alonso Salazar (Calle Norte)": { "lat": 42.46700, "lng": -2.44600 },
-  "C/ Portales / Juan Lobo": { "lat": 42.46580, "lng": -2.44420 },
-  "C/ Once de Junio": { "lat": 42.46560, "lng": -2.44460 },
-  "Plaza Martínez Zaporta": { "lat": 42.46600, "lng": -2.44380 },
-  "Campamento Logroñés / Parque del Ebro": { "lat": 42.46100, "lng": -2.44100 },
-  "Glorieta Dr. Zubía": { "lat": 42.46480, "lng": -2.44350 },
-  "Rodríguez Paterna 21": { "lat": 42.46550, "lng": -2.44500 },
-  "Plaza San Agustín": { "lat": 42.46650, "lng": -2.44350 },
-  "Las Norias": { "lat": 42.47000, "lng": -2.44900 }
+  "Alameda - Plaza San Pío X": {
+    "lat": 42.45421,
+    "lng": -2.42416
+  },
+  "Arco de San Bernabé": {
+    "lat": 42.46512,
+    "lng": -2.447
+  },
+  "Ateneo Riojano 10": {
+    "lat": 42.46707,
+    "lng": -2.43679
+  },
+  "Ateneo Riojano 25": {
+    "lat": 42.46707,
+    "lng": -2.43679
+  },
+  "Auditorio Municipal de Logroño": {
+    "lat": 42.46674,
+    "lng": -2.4394
+  },
+  "Auditorio del Ayuntamiento": {
+    "lat": 42.46597,
+    "lng": -2.43905
+  },
+  "Auditorium del Ayuntamiento": {
+    "lat": 42.46654,
+    "lng": -2.44426
+  },
+  "Avenida de Colón": {
+    "lat": 42.46132,
+    "lng": -2.44061
+  },
+  "Barrio El Campillo": {
+    "lat": 42.47446,
+    "lng": -2.45077
+  },
+  "C/ Gonzalo de Berceo": {
+    "lat": 42.46555,
+    "lng": -2.45519
+  },
+  "C/ Jesús Nalda Bretón": {
+    "lat": 42.45372,
+    "lng": -2.42445
+  },
+  "C/ Once de Junio": {
+    "lat": 42.4656,
+    "lng": -2.4446
+  },
+  "C/ Portales / Juan Lobo": {
+    "lat": 42.4658,
+    "lng": -2.4442
+  },
+  "Café Moderno": {
+    "lat": 42.46679,
+    "lng": -2.44745
+  },
+  "Calle La Ribera": {
+    "lat": 42.47008,
+    "lng": -2.437
+  },
+  "Calvo Sotelo 35": {
+    "lat": 42.46397,
+    "lng": -2.44037
+  },
+  "Campamento Logroñés / Parque del Ebro": {
+    "lat": 42.461,
+    "lng": -2.441
+  },
+  "Cancha baloncesto Calle Grecia": {
+    "lat": 42.46579,
+    "lng": -2.47509
+  },
+  "Carnicerías 14-16": {
+    "lat": 42.46681,
+    "lng": -2.44707
+  },
+  "Casco Antiguo": {
+    "lat": 42.46552,
+    "lng": -2.4484
+  },
+  "Centro Comercial Alcampo": {
+    "lat": 42.45644,
+    "lng": -2.47654
+  },
+  "Centro Joven El Cubo": {
+    "lat": 42.46474,
+    "lng": -2.46116
+  },
+  "Centro Joven El Tacón": {
+    "lat": 42.46836,
+    "lng": -2.43264
+  },
+  "Centro Joven Lobete": {
+    "lat": 42.46086,
+    "lng": -2.43075
+  },
+  "Centro de Día Gonzalo de Berceo": {
+    "lat": 42.46555,
+    "lng": -2.45519
+  },
+  "Chamizo Peña La Uva": {
+    "lat": 42.4677,
+    "lng": -2.43782
+  },
+  "Chimenea del Ebro": {
+    "lat": 42.46991,
+    "lng": -2.44366
+  },
+  "Cigüeña 32": {
+    "lat": 42.46477,
+    "lng": -2.43112
+  },
+  "Ciudad de Vitoria": {
+    "lat": 42.46369,
+    "lng": -2.45145
+  },
+  "Concatedral de la Redonda": {
+    "lat": 42.46661,
+    "lng": -2.44534
+  },
+  "Concha del Espolón": {
+    "lat": 42.46461,
+    "lng": -2.44473
+  },
+  "Cubo del Revellín": {
+    "lat": 42.46712,
+    "lng": -2.45012
+  },
+  "Daniel Trevijano": {
+    "lat": 42.46477,
+    "lng": -2.45099
+  },
+  "Doce Ligero 37": {
+    "lat": 42.4677,
+    "lng": -2.43782
+  },
+  "Doce Ligero 41": {
+    "lat": 42.4654,
+    "lng": -2.43879
+  },
+  "Doce Ligero con Ayuntamiento": {
+    "lat": 42.4677,
+    "lng": -2.43782
+  },
+  "Emilia Pardo Bazán": {
+    "lat": 42.47446,
+    "lng": -2.45077
+  },
+  "Espacio Lagares": {
+    "lat": 42.46827,
+    "lng": -2.44508
+  },
+  "Frontón Javier Adarraga": {
+    "lat": 42.47266,
+    "lng": -2.4523
+  },
+  "Frontón del Revellín": {
+    "lat": 42.46693,
+    "lng": -2.45022
+  },
+  "Fundación Ibercaja": {
+    "lat": 42.4655,
+    "lng": -2.4448
+  },
+  "Glorieta Dr. Zubía": {
+    "lat": 42.4648,
+    "lng": -2.4435
+  },
+  "Glorieta del Doctor Zubía": {
+    "lat": 42.46552,
+    "lng": -2.44272
+  },
+  "Herrerías - Juan Lobo": {
+    "lat": 42.46744,
+    "lng": -2.44452
+  },
+  "Iglesia de Santiago el Real": {
+    "lat": 42.4664,
+    "lng": -2.444
+  },
+  "Las Norias": {
+    "lat": 42.47,
+    "lng": -2.449
+  },
+  "Luisa Marín Lacalle 10": {
+    "lat": 42.46292,
+    "lng": -2.43918
+  },
+  "Madre de Dios 16-18": {
+    "lat": 42.4693,
+    "lng": -2.43682
+  },
+  "Madre de Dios 20": {
+    "lat": 42.4693,
+    "lng": -2.43682
+  },
+  "Murallas del Revellín": {
+    "lat": 42.46476,
+    "lng": -2.44676
+  },
+  "Once de Junio": {
+    "lat": 42.46693,
+    "lng": -2.45022
+  },
+  "Parking de Valbuena": {
+    "lat": 42.46783,
+    "lng": -2.45232
+  },
+  "Parking del Revellín": {
+    "lat": 42.4676,
+    "lng": -2.4507
+  },
+  "Parque Chiribitas": {
+    "lat": 42.46289,
+    "lng": -2.43738
+  },
+  "Parque El Cubo": {
+    "lat": 42.46358,
+    "lng": -2.45822
+  },
+  "Parque Gallarza": {
+    "lat": 42.46069,
+    "lng": -2.44857
+  },
+  "Parque Isaac Albéniz": {
+    "lat": 42.45789,
+    "lng": -2.48105
+  },
+  "Parque Los Lirios": {
+    "lat": 42.45976,
+    "lng": -2.41902
+  },
+  "Parque Picos de Urbión": {
+    "lat": 42.45191,
+    "lng": -2.46148
+  },
+  "Parque Rosalía de Castro": {
+    "lat": 42.45628,
+    "lng": -2.43652
+  },
+  "Parque San Adrián": {
+    "lat": 42.45649,
+    "lng": -2.4592
+  },
+  "Parque San Antonio": {
+    "lat": 42.47215,
+    "lng": -2.4439
+  },
+  "Parque Santa Juliana": {
+    "lat": 42.46877,
+    "lng": -2.42989
+  },
+  "Parque de la Cometa": {
+    "lat": 42.46615,
+    "lng": -2.45988
+  },
+  "Parque de la Estrella": {
+    "lat": 42.45411,
+    "lng": -2.42546
+  },
+  "Parque de la Ribera": {
+    "lat": 42.47095,
+    "lng": -2.43743
+  },
+  "Parque del Carmen": {
+    "lat": 42.46098,
+    "lng": -2.44249
+  },
+  "Parque del Ebro": {
+    "lat": 42.461,
+    "lng": -2.441
+  },
+  "Parroquia Nuestra Señora de Valvanera": {
+    "lat": 42.46451,
+    "lng": -2.45524
+  },
+  "Paseo del Espolón": {
+    "lat": 42.46471,
+    "lng": -2.44557
+  },
+  "Plaza Calle Donostia": {
+    "lat": 42.46319,
+    "lng": -2.46589
+  },
+  "Plaza Diversidad": {
+    "lat": 42.4656,
+    "lng": -2.4458
+  },
+  "Plaza Fermín Gurmindo": {
+    "lat": 42.46956,
+    "lng": -2.43513
+  },
+  "Plaza Martínez Flamarique": {
+    "lat": 42.46805,
+    "lng": -2.43658
+  },
+  "Plaza Martínez Zaporta": {
+    "lat": 42.46679,
+    "lng": -2.44745
+  },
+  "Plaza Primero de Mayo": {
+    "lat": 42.46071,
+    "lng": -2.45498
+  },
+  "Plaza San Agustín": {
+    "lat": 42.46614,
+    "lng": -2.44863
+  },
+  "Plaza San Bartolomé": {
+    "lat": 42.46722,
+    "lng": -2.44353
+  },
+  "Plaza Santiago": {
+    "lat": 42.46636,
+    "lng": -2.44413
+  },
+  "Plaza de Abastos": {
+    "lat": 42.467,
+    "lng": -2.445
+  },
+  "Plaza de Santiago": {
+    "lat": 42.46782,
+    "lng": -2.44715
+  },
+  "Plaza de Toros La Ribera": {
+    "lat": 42.47138,
+    "lng": -2.43717
+  },
+  "Plaza de la Alhóndiga": {
+    "lat": 42.45994,
+    "lng": -2.44374
+  },
+  "Plaza de la Constitución": {
+    "lat": 42.46897,
+    "lng": -2.43851
+  },
+  "Plaza de la Diversidad": {
+    "lat": 42.46636,
+    "lng": -2.45036
+  },
+  "Plaza de la Libertad (Varea)": {
+    "lat": 42.46148,
+    "lng": -2.41078
+  },
+  "Plaza de la Oca": {
+    "lat": 42.46602,
+    "lng": -2.44492
+  },
+  "Plaza de las Chiribitas": {
+    "lat": 42.46197,
+    "lng": -2.43525
+  },
+  "Plaza del Ayuntamiento": {
+    "lat": 42.46628,
+    "lng": -2.43975
+  },
+  "Plaza del Cerrado": {
+    "lat": 42.46221,
+    "lng": -2.40864
+  },
+  "Plaza del Mercado": {
+    "lat": 42.46679,
+    "lng": -2.44583
+  },
+  "Plaza del Parlamento": {
+    "lat": 42.46682,
+    "lng": -2.44965
+  },
+  "Plazuela Alonso Salazar": {
+    "lat": 42.46756,
+    "lng": -2.4495
+  },
+  "Plazuela Alonso Salazar (Calle Norte)": {
+    "lat": 42.467,
+    "lng": -2.446
+  },
+  "Polideportivo Las Gaunas": {
+    "lat": 42.45617,
+    "lng": -2.45194
+  },
+  "Portales 23": {
+    "lat": 42.46621,
+    "lng": -2.45045
+  },
+  "Punto de lectura La Pajarera": {
+    "lat": 42.46098,
+    "lng": -2.44249
+  },
+  "Punto de lectura La Rosaleda": {
+    "lat": 42.46471,
+    "lng": -2.44557
+  },
+  "Recinto Ferial de Las Norias": {
+    "lat": 42.47351,
+    "lng": -2.45175
+  },
+  "Residencia Santa Teresa Jornet": {
+    "lat": 42.46369,
+    "lng": -2.45145
+  },
+  "Residencia de ancianos": {
+    "lat": 42.46369,
+    "lng": -2.45145
+  },
+  "Rodríguez Paterna 21": {
+    "lat": 42.46764,
+    "lng": -2.44293
+  },
+  "Sala de Exposiciones del Ayuntamiento": {
+    "lat": 42.46575,
+    "lng": -2.4401
+  },
+  "Salón de Plenos del Ayuntamiento": {
+    "lat": 42.46597,
+    "lng": -2.43905
+  },
+  "San Matías 6": {
+    "lat": 42.4664,
+    "lng": -2.4293
+  },
+  "Senado 5": {
+    "lat": 42.46861,
+    "lng": -2.43791
+  },
+  "Teatro Bretón": {
+    "lat": 42.46492,
+    "lng": -2.44852
+  },
+  "Vara de Rey - Gran Vía": {
+    "lat": 42.45865,
+    "lng": -2.44656
+  },
+  "Zona Calle Chile": {
+    "lat": 42.46101,
+    "lng": -2.45487
+  },
+  "Zona de la Solana": {
+    "lat": 42.45962,
+    "lng": -2.4806
+  }
 }
