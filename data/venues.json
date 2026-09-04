@@ -83,6 +83,10 @@
     "lat": 42.45644,
     "lng": -2.47654
   },
+  "Centro Cultural del Rioja": {
+    "lat": 42.46769,
+    "lng": -2.44584
+  },
   "Centro Joven El Cubo": {
     "lat": 42.46474,
     "lng": -2.46116
@@ -127,6 +131,10 @@
     "lat": 42.46712,
     "lng": -2.45012
   },
+  "Círculo de la Amistad": {
+    "lat": 42.46635,
+    "lng": -2.44624
+  },
   "Daniel Trevijano": {
     "lat": 42.46477,
     "lng": -2.45099
@@ -142,6 +150,10 @@
   "Doce Ligero con Ayuntamiento": {
     "lat": 42.4677,
     "lng": -2.43782
+  },
+  "El Campillo": {
+    "lat": 42.4779,
+    "lng": -2.45357
   },
   "Emilia Pardo Bazán": {
     "lat": 42.47446,
@@ -406,6 +418,10 @@
   "Rodríguez Paterna 21": {
     "lat": 42.46764,
     "lng": -2.44293
+  },
+  "Sala Fundición": {
+    "lat": 42.46357,
+    "lng": -2.45228
   },
   "Sala de Exposiciones del Ayuntamiento": {
     "lat": 42.46575,
